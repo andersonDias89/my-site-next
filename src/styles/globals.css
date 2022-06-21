@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+
+}
+
+.container {
+    @apply w-4/5 m-auto animation-transition
+}
+
+
+/* Animações globais */
+
+.animation-transition {
+    animation: opacity-layer 1s ease-in, transition-layer 1s ease-in;
+}
+
+
+@keyframes opacity-layer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes transition-layer {
+    0% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
