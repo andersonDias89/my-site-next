@@ -10,6 +10,18 @@ body {
     @apply w-4/5 m-auto 
 }
 
+.shape {
+    background: linear-gradient(to bottom, #1d1d33, #13131F);
+    border-bottom: #4C6FBF solid 2px;
+    border-top: #4C6FBF solid 2px;
+}
+
+.card {
+    background: linear-gradient(to top, #12121f, #13131F);
+    border: #4C6FBF solid 2px;
+    
+}
+
 
 /* Animações globais */
 
@@ -21,6 +33,9 @@ body {
     animation: opacity-layer 1s ease-in, transition-layer-right 1s ease-in;  
 }
 
+.animation-transition-bottom {
+    animation: opacity-layer 1s ease-in, transition-layer-bottom 1s ease-in;  
+}
 
 @keyframes opacity-layer {
     0% {
@@ -46,5 +61,14 @@ body {
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes transition-layer-bottom {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
