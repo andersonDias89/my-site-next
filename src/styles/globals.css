@@ -3,18 +3,22 @@
 @tailwind utilities;
 
 body {
-
+@apply bg-dark text-white
 }
 
 .container {
-    @apply w-4/5 m-auto animation-transition
+    @apply w-4/5 m-auto 
 }
 
 
 /* Animações globais */
 
-.animation-transition {
-    animation: opacity-layer 1s ease-in, transition-layer 1s ease-in;
+.animation-transition-left {
+    animation: opacity-layer 1s ease-in, transition-layer-left 1s ease-in;
+}
+
+.animation-transition-right {
+    animation: opacity-layer 1s ease-in, transition-layer-right 1s ease-in;  
 }
 
 
@@ -27,9 +31,18 @@ body {
     }
 }
 
-@keyframes transition-layer {
+@keyframes transition-layer-left {
     0% {
         transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes transition-layer-right {
+    0% {
+        transform: translateX(50px);
     }
     100% {
         transform: translateX(0);
