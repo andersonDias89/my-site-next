@@ -16,6 +16,21 @@ body {
     border-top: #4C6FBF solid 2px;
 }
 
+.degrade {
+    background: linear-gradient(to bottom, #1d1d33, #13131F);
+    
+    border-top: #4C6FBF solid 2px;
+}
+
+.degradeButton {
+    background: linear-gradient(to bottom, #4C6FBF, #7dabca);
+}
+
+.degradeButton:hover {
+    background: linear-gradient(to bottom, #4767b3, #6d97b3); 
+}
+
+
 .card {
     background: linear-gradient(to top, #12121f, #13131F);
     border: #4C6FBF solid 2px;
@@ -33,8 +48,8 @@ body {
     animation: opacity-layer 1s ease-in, transition-layer-right 1s ease-in;  
 }
 
-.animation-transition-bottom {
-    animation: opacity-layer 1s ease-in, transition-layer-bottom 1s ease-in;  
+.animation-transition-top {
+    animation: opacity-layer 1s ease-in, transition-layer-top 1s ease-in;  
 }
 
 @keyframes opacity-layer {
@@ -64,9 +79,9 @@ body {
     }
 }
 
-@keyframes transition-layer-bottom {
+@keyframes transition-layer-top {
     0% {
-        transform: translateY(50px);
+        transform: translateY(-50px);
     }
     100% {
         transform: translateY(0);

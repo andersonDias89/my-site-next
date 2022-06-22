@@ -9,7 +9,8 @@ module.exports = {
       colors: {
         dark: "#13131F", 
         white: "#FEFBFB",
-        secondary: "#4C6FBF"
+        secondary: "#4C6FBF",
+        blueLight: "#BCDEF5"
       }
     },
   },
