@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export function Header() {
     return (
-        <header className="w-full h-16 flex items-center">
+        <header className="w-full h-14 flex items-center">
             <div className="container">
                 <nav className="flex items-center justify-center">
-                    <ul className="flex space-x-8">
+                    <ul className="flex space-x-12 font-light">
                         <li className="cursor-pointer">
                             <Link href={'/'}>Home</Link>
                         </li>

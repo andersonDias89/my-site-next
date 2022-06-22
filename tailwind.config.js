@@ -10,7 +10,8 @@ module.exports = {
         dark: "#13131F", 
         white: "#FEFBFB",
         secondary: "#4C6FBF",
-        blueLight: "#BCDEF5"
+        blueLight: "#BCDEF5",
+        purple: "#5e58b1"
       }
     },
   },

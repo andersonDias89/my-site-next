@@ -11,8 +11,8 @@ export function AboutMe() {
             <div className="container flex justify-center items-center space-x-10">
                 <div className="space-y-2 shape animation-transition-left bg-gray-700 py-4 px-6 w-1/2 rounded-lg">
                     <img className="rounded-full w-28" src={'https://github.com/andersondias89.png'} alt="" />
-                    <h2 className="text-2xl">Quem eu sou?</h2>
-                    <div className="text-sm space-y-2">
+                    <h2 className="text-2xl text-blueLight">Quem eu sou?</h2>
+                    <div className="text-xs space-y-2">
                         <p>
                             Trabalhei durante alguns anos na área de design,
                             e autônomo como fotógrafo de eventos. Atualmente
