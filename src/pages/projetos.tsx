@@ -53,7 +53,6 @@ export default function Projetos() {
                     </Sliders>
                 </div>
             </div>
-            {/* <Sliders/> */}
         </>
     )
 }
@@ -87,3 +86,12 @@ const sliders = [
     },
 
 ]
+
+
+export async function getStaticProps() {
+    return {
+      props: {
+        
+      },
+    }
+  }
