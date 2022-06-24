@@ -10,6 +10,8 @@ import { Project } from '../components/Projects/Carrousel/Project';
 import { Header } from '../components/Header';
 import Head from 'next/head';
 
+import {v4 as uuid} from 'uuid'
+
 
 
 export default function Projetos() {
@@ -34,15 +36,16 @@ export default function Projetos() {
             <div className="w-full h-[calc(100vh-64px)] flex items-center justify-center flex-wrap degrade ">
                 <div className="container ">
                     <Sliders settings={settings}>
-                        {sliders.map(slider => {
+                        {sliders.map((slider, index) => {
                             return (
-                                <SwiperSlide>
+                                <SwiperSlide key={index}>
                                     <Project
                                         title={slider.title}
                                         description={slider.description}
                                         image={slider.image}
                                         visitPage={slider.visitPage}
                                         repository={slider.repository}
+                                        key={slider.id}
                                     />
                                 </SwiperSlide>
                             )
@@ -57,6 +60,7 @@ export default function Projetos() {
 
 const sliders = [
     {
+        id: uuid(),
         title: 'Projeto 1',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet beatae facilis soluta. Ex nesciunt evenieteligendi nulla, cumque sint reprehenderit sit aperiamreiciendis culpa quibusdam.',
         image: "assets/example.jpg",
@@ -65,6 +69,7 @@ const sliders = [
     },
 
     {
+        id: uuid(),
         title: 'Projeto 2',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet beatae facilis soluta. Ex nesciunt evenieteligendi nulla, cumque sint reprehenderit sit aperiamreiciendis culpa quibusdam.',
         image: "assets/example2.jpg",
@@ -73,6 +78,7 @@ const sliders = [
     },
 
     {
+        id: uuid(),
         title: 'Projeto 3',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet beatae facilis soluta. Ex nesciunt evenieteligendi nulla, cumque sint reprehenderit sit aperiamreiciendis culpa quibusdam.',
         image: "assets/example3.jpg",
