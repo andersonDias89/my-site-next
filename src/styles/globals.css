@@ -117,3 +117,17 @@ body {
     background-position: top;
     box-shadow: 5px 15px 15px #13131F ;
 }
+
+.projeto-2 {
+    background-image: url(../../public/assets/academia-project.png);
+    background-size: cover;
+    background-position: top;
+    box-shadow: 5px 15px 15px #13131F ;
+}
+
+.projeto-3 {
+    background-image: url(../../public/assets/rachi-project.png);
+    background-size: cover;
+    background-position: top;
+    box-shadow: 5px 15px 15px #13131F ;
+}

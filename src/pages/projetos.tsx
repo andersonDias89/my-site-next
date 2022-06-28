@@ -63,26 +63,26 @@ const sliders = [
         title: 'Desafio Naped',
         description: 'Projeto realizado para resolver um desafio da comunidade codelândia do Iuri Silva. É um blog com conteúdo voltado para o público "nerd".',
         image: "projeto-1",
-        visitPage: "https://andersondiasdev.web.app",
+        visitPage: "https://naped-desafio-ten.vercel.app",
         repository: "https://github.com/andersonDias89/naped"
     },
 
     {
         id: uuid(),
-        title: 'Projeto 2',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet beatae facilis soluta. Ex nesciunt evenieteligendi nulla, cumque sint reprehenderit sit aperiamreiciendis culpa quibusdam.',
-        image: "assets/example2.jpg",
-        visitPage: "naped-desafio-ten.vercel.app",
-        repository: "https://github.com/andersonDias89"
+        title: 'Site Academia',
+        description: 'Projeto criado para portfólio.Trata-se de um site para academia divulgando os seus serviços',
+        image: "projeto-2",
+        visitPage: "https://academia-projeto.web.app/",
+        repository: "https://github.com/andersonDias89/academia-treino"
     },
 
     {
         id: uuid(),
-        title: 'Projeto 3',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet beatae facilis soluta. Ex nesciunt evenieteligendi nulla, cumque sint reprehenderit sit aperiamreiciendis culpa quibusdam.',
-        image: "assets/example3.jpg",
-        visitPage: "https://andersondiasdev.web.app",
-        repository: "https://github.com/andersonDias89"
+        title: 'Projeto Rachi',
+        description: 'Desafio proposto por Iuri Silva para desenvolver um web site da empresa Rachi',
+        image: "projeto-3",
+        visitPage: "https://projeto-rachi.web.app/",
+        repository: "https://github.com/andersonDias89/rachi-desafio"
     },
 
 ]

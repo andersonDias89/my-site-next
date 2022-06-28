@@ -15,8 +15,8 @@ export function Project({ title, description, image, repository, visitPage}: Pro
                     <p className="font-light text-blueLight">{description}</p>
 
                     <div className="space-x-3 absolute bottom-12">
-                        <a href={visitPage} className="degradeButton text-dark font-extrabold shadow-lg transition-colors mt-4 py-2 px-8 rounded-md">Visitar</a>
-                        <a href={repository} className="bg-transparent font-extrabold hover:text-blueLight transition-colors border-2 border-secondary text-secondary mt-4 py-2 px-8 rounded-md">Repositório</a>
+                        <a href={visitPage} target='_blank' className="degradeButton text-dark font-extrabold shadow-lg transition-colors mt-4 py-2 px-8 rounded-md">Visitar</a>
+                        <a href={repository} target='_blank' className="bg-transparent font-extrabold hover:text-blueLight transition-colors border-2 border-secondary text-secondary mt-4 py-2 px-8 rounded-md">Repositório</a>
                     </div>
                 </div>
 
