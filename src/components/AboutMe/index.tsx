@@ -1,8 +1,9 @@
 import { DiJavascript1, DiCss3 } from 'react-icons/di'
 import { FaReact } from 'react-icons/fa'
-import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
+import { SiNextdotjs, SiTailwindcss, SiTypescript } from 'react-icons/si'
 import { CardSkill } from "./CardSkill";
 import { AiFillHtml5 } from 'react-icons/ai'
+import {GrGraphQl} from 'react-icons/gr'
 
 
 export function AboutMe() {
@@ -31,7 +32,7 @@ export function AboutMe() {
                 </div>
 
                 <div className="animation-transition-right w-1/2 flex items-center justify-center ">
-                    <div className="grid grid-cols-3 gap-5">
+                    <div className="grid grid-cols-4 gap-5">
                         {skills.map((item, index) => {
                             return (
                                 <CardSkill
@@ -78,6 +79,16 @@ const skills = [
     {
         title: 'Tailwind Ui',
         icon: <SiTailwindcss />
+    },
+
+    {
+        title: 'Typescript',
+        icon: <SiTypescript />
+    },
+
+    {
+        title: 'Graphql',
+        icon: <GrGraphQl />
     },
 ]
 
