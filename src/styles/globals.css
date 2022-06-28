@@ -3,26 +3,27 @@
 @tailwind utilities;
 
 body {
-@apply bg-dark text-white
+    @apply bg-dark text-white;
+    --webkit-font-smoothing: antialiased;
 }
 
 ::-webkit-scrollbar {
     width: 5px;
     height: 4px;
-  }
-  
- 
-  ::-webkit-scrollbar-track {
-    background: #4C6FBF;
-  }
-  
+}
 
-  ::-webkit-scrollbar-thumb {
+
+::-webkit-scrollbar-track {
     background: #4C6FBF;
-  }
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #4C6FBF;
+}
 
 .container {
-    @apply w-4/5 m-auto 
+    @apply w-4/5 m-auto
 }
 
 .shape {
@@ -33,7 +34,7 @@ body {
 
 .degrade {
     background: linear-gradient(to bottom, #1d1d33, #13131F);
-    
+
     border-top: #4C6FBF solid 2px;
 }
 
@@ -49,7 +50,7 @@ body {
 .card {
     background: linear-gradient(to top, #12121f, #13131F);
     border: #4C6FBF solid 2px;
-    
+
 }
 
 
@@ -60,17 +61,18 @@ body {
 }
 
 .animation-transition-right {
-    animation: opacity-layer 1s ease-in, transition-layer-right 1s ease-in;  
+    animation: opacity-layer 1s ease-in, transition-layer-right 1s ease-in;
 }
 
 .animation-transition-top {
-    animation: opacity-layer 1s ease-in, transition-layer-top 1s ease-in;  
+    animation: opacity-layer 1s ease-in, transition-layer-top 1s ease-in;
 }
 
 @keyframes opacity-layer {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -80,6 +82,7 @@ body {
     0% {
         transform: translateX(-50px);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -89,6 +92,7 @@ body {
     0% {
         transform: translateX(50px);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -98,7 +102,18 @@ body {
     0% {
         transform: translateY(-50px);
     }
+
     100% {
         transform: translateY(0);
     }
+}
+
+
+/* imagens dos projetos */
+
+.projeto-1 {
+    background-image: url(../../public/assets/naped-project.png);
+    background-size: cover;
+    background-position: top;
+    box-shadow: 5px 15px 15px #13131F ;
 }

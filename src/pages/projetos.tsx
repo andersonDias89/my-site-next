@@ -60,11 +60,11 @@ export default function Projetos() {
 const sliders = [
     {
         id: uuid(),
-        title: 'Projeto 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet beatae facilis soluta. Ex nesciunt evenieteligendi nulla, cumque sint reprehenderit sit aperiamreiciendis culpa quibusdam.',
-        image: "assets/example.jpg",
+        title: 'Desafio Naped',
+        description: 'Projeto realizado para resolver um desafio da comunidade codelândia do Iuri Silva. É um blog com conteúdo voltado para o público "nerd".',
+        image: "projeto-1",
         visitPage: "https://andersondiasdev.web.app",
-        repository: "https://github.com/andersonDias89"
+        repository: "https://github.com/andersonDias89/naped"
     },
 
     {
@@ -72,7 +72,7 @@ const sliders = [
         title: 'Projeto 2',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet beatae facilis soluta. Ex nesciunt evenieteligendi nulla, cumque sint reprehenderit sit aperiamreiciendis culpa quibusdam.',
         image: "assets/example2.jpg",
-        visitPage: "https://andersondiasdev.web.app",
+        visitPage: "naped-desafio-ten.vercel.app",
         repository: "https://github.com/andersonDias89"
     },
 
