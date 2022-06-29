@@ -14,7 +14,7 @@ import {v4 as uuid} from 'uuid'
 
 
 
-export default function Projetos({sliders}) {
+export default function Projetos() {
     const settings: SwiperProps = {
         spaceBetween: 100,
         slidesPerView: 1,
@@ -45,7 +45,6 @@ export default function Projetos({sliders}) {
                                         image={slider.image}
                                         visitPage={slider.visitPage}
                                         repository={slider.repository}
-                                        id={slider.id}
                                         key={slider.id}
                                     />
                                 </SwiperSlide>
@@ -58,41 +57,41 @@ export default function Projetos({sliders}) {
     )
 }
 
+const sliders = [
+    {
+        id: uuid(),
+        title: 'Desafio Naped',
+        description: 'Projeto realizado para resolver um desafio da comunidade codelândia do Iuri Silva. É um blog com conteúdo voltado para o público "nerd".',
+        image: "projeto-1",
+        visitPage: "https://naped-desafio-ten.vercel.app",
+        repository: "https://github.com/andersonDias89/naped"
+    },
 
-export function getStaticProps() {
-    const sliders = [
-        {
-            id: uuid(),
-            title: 'Desafio Naped',
-            description: 'Projeto realizado para resolver um desafio da comunidade codelândia do Iuri Silva. É um blog com conteúdo voltado para o público "nerd".',
-            image: "projeto-1",
-            visitPage: "https://naped-desafio-ten.vercel.app",
-            repository: "https://github.com/andersonDias89/naped"
-        },
+    {
+        id: uuid(),
+        title: 'Site Academia',
+        description: 'Projeto criado para portfólio.Trata-se de um site para academia divulgando os seus serviços',
+        image: "projeto-2",
+        visitPage: "https://academia-projeto.web.app/",
+        repository: "https://github.com/andersonDias89/academia-treino"
+    },
 
-        {
-            id: uuid(),
-            title: 'Site Academia',
-            description: 'Projeto criado para portfólio.Trata-se de um site para academia divulgando os seus serviços',
-            image: "projeto-2",
-            visitPage: "https://academia-projeto.web.app/",
-            repository: "https://github.com/andersonDias89/academia-treino"
-        },
+    {
+        id: uuid(),
+        title: 'Projeto Rachi',
+        description: 'Desafio proposto por Iuri Silva para desenvolver um web site da empresa Rachi',
+        image: "projeto-3",
+        visitPage: "https://projeto-rachi.web.app/",
+        repository: "https://github.com/andersonDias89/rachi-desafio"
+    },
 
-        {
-            id: uuid(),
-            title: 'Projeto Rachi',
-            description: 'Desafio proposto por Iuri Silva para desenvolver um web site da empresa Rachi',
-            image: "projeto-3",
-            visitPage: "https://projeto-rachi.web.app/",
-            repository: "https://github.com/andersonDias89/rachi-desafio"
-        },
-    ]
+]
 
+
+export async function getStaticProps() {
     return {
-        
       props: {
-        sliders
-      },   
+        
+      },
     }
   }

@@ -16,7 +16,7 @@ export function Header() {
                             <Link href={'/projetos'}>Projetos</Link>
                         </li>
                         <li className="cursor-pointer">
-                            <Link href={'/contato'}>Contato</Link>
+                            <Link href={'/contatos'}>Contatos</Link>
                         </li>
                     </ul>
                 </nav>
