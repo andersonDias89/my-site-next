@@ -11,32 +11,10 @@ import { Header } from '../components/Header';
 import Head from 'next/head';
 
 import {v4 as uuid} from 'uuid'
-import { api } from '../components/server/axios';
-import { useEffect, useState } from 'react';
 
-// interface Project {
-//     id: string
-//     title: string
-//     description: string
-//     image: string
-//     visitPage: string
-//     repository: string
 
-// }
 
-export default function Projetos() {
-    const [projects, setProjects] = useState([]);
-    
-    useEffect(() => {
-        api.get('/projetos').then(res => {
-            setProjects(res.data);
-            console.log(projects)
-        }
-        ).catch(err => {
-            console.log(err);
-        })}, []);
-    
-
+export default function Projetos({sliders}) {
     const settings: SwiperProps = {
         spaceBetween: 100,
         slidesPerView: 1,
@@ -58,7 +36,7 @@ export default function Projetos() {
             <div className="w-full h-[calc(100vh-64px)] flex items-center justify-center flex-wrap degrade ">
                 <div className="container ">
                     <Sliders settings={settings}>
-                        {projects.map((slider, index) => {
+                        {sliders.map((slider, index) => {
                             return (
                                 <SwiperSlide key={index}>
                                     <Project
@@ -81,17 +59,40 @@ export default function Projetos() {
 }
 
 
+export function getStaticProps() {
+    const sliders = [
+        {
+            id: uuid(),
+            title: 'Desafio Naped',
+            description: 'Projeto realizado para resolver um desafio da comunidade codelândia do Iuri Silva. É um blog com conteúdo voltado para o público "nerd".',
+            image: "projeto-1",
+            visitPage: "https://naped-desafio-ten.vercel.app",
+            repository: "https://github.com/andersonDias89/naped"
+        },
 
+        {
+            id: uuid(),
+            title: 'Site Academia',
+            description: 'Projeto criado para portfólio.Trata-se de um site para academia divulgando os seus serviços',
+            image: "projeto-2",
+            visitPage: "https://academia-projeto.web.app/",
+            repository: "https://github.com/andersonDias89/academia-treino"
+        },
 
-export async function getServerSideProps() {
-   
-    
+        {
+            id: uuid(),
+            title: 'Projeto Rachi',
+            description: 'Desafio proposto por Iuri Silva para desenvolver um web site da empresa Rachi',
+            image: "projeto-3",
+            visitPage: "https://projeto-rachi.web.app/",
+            repository: "https://github.com/andersonDias89/rachi-desafio"
+        },
+    ]
+
     return {
         
       props: {
-        
+        sliders
       },   
     }
- 
-}
-  
+  }
