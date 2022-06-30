@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react';
 
-type SlidersProps = {
+export type SlidersProps = {
     children: ReactNode
     settings: SwiperProps
 }

@@ -11,7 +11,7 @@ import { Header } from '../components/Header';
 import Head from 'next/head';
 
 import {v4 as uuid} from 'uuid'
-import { api } from '../components/server/axios';
+import { api } from '../server/axios';
 import { useEffect, useState } from 'react';
 
 // interface Project {
