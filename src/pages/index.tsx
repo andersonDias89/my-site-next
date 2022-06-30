@@ -21,10 +21,10 @@ const Home: NextPage = () => {
 
 export default Home
 
-export async function getStaticProps() {
-  return {
-    props: {
+// export function getServerSideProps() {
+//   return {
+//     props: {
       
-    },
-  }
-}
+//     },
+//   }
+// }
