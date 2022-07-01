@@ -12,6 +12,12 @@ body {
     height: 4px;
 }
 
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px #00B37E;
+    
+}
+
 
 ::-webkit-scrollbar-track {
     background: #4C6FBF;
@@ -28,22 +34,23 @@ body {
 
 .shape {
     background: linear-gradient(to bottom, #1d1d33, #13131F);
-    border-bottom: #4C6FBF solid 2px;
-    border-top: #4C6FBF solid 2px;
+    border-bottom: #00B37E solid 2px;
+    border-top: #00B37E solid 2px;
 }
 
 .degrade {
     background: linear-gradient(to bottom, #1d1d33, #13131F);
 
-    border-top: #4C6FBF solid 2px;
+    
 }
 
+
 .degradeButton {
-    background: linear-gradient(to top, #7696e0, #7dabca);
+    background: linear-gradient(to top, #00B37E, #05da9a);
 }
 
 .degradeButton:hover {
-    background: linear-gradient(to top, #8ba9ee, #94c5e6);
+    background: linear-gradient(to top, #00B37E, #07e2a1);
 }
 
 
