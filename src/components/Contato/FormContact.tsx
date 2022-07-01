@@ -27,16 +27,20 @@ export function FormContact() {
 
             <div className="w-4/5 space-y-1">
                 <label className="text-sm" htmlFor="email">Digite sua mensagem:</label>
-                <div className="w-full">
+                <div className="w-full h-40">
                     <textarea
                         name="message"
-                        className="w-full rounded-lg p-2 outline-0 bg-dark placeholder-gray-700 resize-none"
+                        className="w-full rounded-lg p-2 outline-0 bg-dark placeholder-gray-700 resize-none h-full"
                     />
                 </div>
             </div>
 
             <div className="flex w-4/5 justify-start">
-                <button className="degradeButton text-dark font-extrabold shadow-lg transition-colors mt-3 py-2 px-12 rounded-md">Enviar</button>
+                <button
+                    type="submit"
+                    className="degradeButton text-dark font-extrabold shadow-lg transition-colors mt-3 py-2 px-12 rounded-md">
+                    Enviar
+                </button>
             </div>
         </form>
     )
