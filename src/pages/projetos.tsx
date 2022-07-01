@@ -10,23 +10,14 @@ import { Project } from '../components/Projects/Carrousel/Project';
 import { Header } from '../components/Header';
 import Head from 'next/head';
 
-import {v4 as uuid} from 'uuid'
-import { api } from '../components/server/axios';
 import { useEffect, useState } from 'react';
+import { api } from '../server/axios';
 
-// interface Project {
-//     id: string
-//     title: string
-//     description: string
-//     image: string
-//     visitPage: string
-//     repository: string
 
-// }
 
 export default function Projetos() {
     const [projects, setProjects] = useState([]);
-    
+
     useEffect(() => {
         api.get('/projetos').then(res => {
             setProjects(res.data);
@@ -34,8 +25,9 @@ export default function Projetos() {
         }
         ).catch(err => {
             console.log(err);
-        })}, []);
-    
+        })
+    }, [])
+
 
     const settings: SwiperProps = {
         spaceBetween: 100,
@@ -81,17 +73,11 @@ export default function Projetos() {
 }
 
 
-
-
-export async function getServerSideProps() {
-   
-    
+export function getStaticProps() {
     return {
-        
-      props: {
-        
-      },   
+
+        props: {
+
+        },
     }
- 
 }
-  
