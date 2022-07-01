@@ -21,7 +21,7 @@ export function Project({ title, description, image, repository, visitPage, id}:
                     </div>
                 </div>
 
-                <div className={`w-4/6 h-64 bg-slate-500 rounded-md ${image} p-3 border-4 border-secondary`}>
+                <div className={`w-4/6 h-64 bg-slate-500 rounded-md ${image} p-3 border border-secondary`}>
                 </div>
 
 
