@@ -10,11 +10,7 @@ import { Project } from '../components/Projects/Carrousel/Project';
 import { Header } from '../components/Header';
 import Head from 'next/head';
 
-<<<<<<< HEAD
-import {v4 as uuid} from 'uuid'
-import { api } from '../server/axios';
-=======
->>>>>>> d2200a78eabc40fbe93663d7340e9b2b18eddea6
+
 import { useEffect, useState } from 'react';
 import { api } from '../server/axios';
 
