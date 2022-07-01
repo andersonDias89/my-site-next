@@ -7,13 +7,18 @@ export function InitialPage() {
             <div className="container flex justify-center items-center ">
                 <div className="animation-transition-left w-1/2 flex items-center justify-center">
                     <div>
-                        <span className="font-light text-xl">Eu me chamo,</span>
-                        <h1 className="text-4xl"><span className="text-secondary">Anderson</span> Dias</h1>
-                        <span className="font-light text-xl">Sou desenvolvedor front-end</span>
+                        <h1 className="text-4xl">
+                            <span className="text-secondary text text-6xl font-extrabold">Anderson</span>
+                            <span>Dias</span>
+                        </h1>
+                        <div>
+                            <span className="font-light text-3xl">Sou desenvolvedor </span>
+                            <strong className="text-blueLight font-extrabold text-2xl">front-end</strong>
+                        </div>
 
-                        <div className="flex space-x-4">
-                            <button className="degradeButton text-dark font-extrabold shadow-lg transition-colors mt-4 py-2 px-8 rounded-md">Projetos</button>
-                            <button className="bg-transparent font-extrabold hover:text-blueLight transition-colors border-2 border-secondary text-secondary mt-4 py-2 px-8 rounded-md">CV</button>
+                        <div className="flex w-full space-x-2">
+                            <button className="degradeButton text-dark font-extrabold shadow-lg transition-colors mt-4 w-52 h-10 rounded-md">Projetos</button>
+                            <button className="bg-transparent font-extrabold hover:text-blueLight transition-colors flex-1  h-10 border-2 border-secondary text-secondary mt-4 py-2 px-8 rounded-md">Contato</button>
                         </div>
                     </div>
                 </div>
