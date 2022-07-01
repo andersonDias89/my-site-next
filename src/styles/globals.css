@@ -12,6 +12,12 @@ body {
     height: 4px;
 }
 
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px #00B37E;
+    
+}
+
 
 ::-webkit-scrollbar-track {
     background: #4C6FBF;
@@ -37,6 +43,7 @@ body {
 
     
 }
+
 
 .degradeButton {
     background: linear-gradient(to top, #00B37E, #05da9a);
