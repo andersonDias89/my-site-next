@@ -3,7 +3,7 @@ import { FaReact } from 'react-icons/fa'
 import { SiNextdotjs, SiTailwindcss, SiTypescript } from 'react-icons/si'
 import { CardSkill } from "./CardSkill";
 import { AiFillHtml5 } from 'react-icons/ai'
-import {GrGraphQl} from 'react-icons/gr'
+import { GrGraphQl } from 'react-icons/gr'
 
 
 export function AboutMe() {

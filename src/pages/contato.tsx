@@ -1,22 +1,15 @@
+import { Contact } from "../components/Contato"
 import { Header } from "../components/Header"
 
 
-export default function Contatos({ numero }) {
+export default function Contatos() {
   return (
     <div>
       <Header />
-      {numero}
+      <main>
+        <Contact/>
+      </main>
     </div>
   )
 }
 
-
-export function getStaticProps() {
-
-  return {
-    props: {
-      numero: Math.random()
-    },
-    revalidate: 10
-  }
-}
