@@ -25,9 +25,16 @@ export function InitialPage() {
 
             <div className="w-full container flex justify-center">
                 <div className="animation-transition-top z-50 flex space-x-4 text-4xl text-secondary">
-                    <AiFillGithub />
-                    <AiFillLinkedin />
-                    <AiFillInstagram />
+                    <a className="hover:-translate-y-1 transition-transform cursor-pointer">
+                        <AiFillGithub />
+                    </a>
+                    <a className="hover:-translate-y-1 transition-transform cursor-pointer">
+                        <AiFillLinkedin />
+                    </a>
+
+                    <a className="hover:-translate-y-1 transition-transform cursor-pointer">
+                        <AiFillInstagram />
+                    </a>
                 </div>
             </div>
         </div>
