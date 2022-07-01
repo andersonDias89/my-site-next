@@ -10,6 +10,7 @@ import { Project } from '../components/Projects/Carrousel/Project';
 import { Header } from '../components/Header';
 import Head from 'next/head';
 
+
 import { useEffect, useState } from 'react';
 import { api } from '../server/axios';
 
