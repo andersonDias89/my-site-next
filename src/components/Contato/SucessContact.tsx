@@ -29,12 +29,6 @@ export function SucessContact() {
                             className="degradeButton text-dark font-extrabold shadow-lg transition-colors mt-3 py-2 px-12 rounded-md">
                             Voltar para a home
                         </button>
-
-                        <div className='text-sm mt-2 border-b-2 hover:text-blueLight transition-colors'>
-                        <Link href={'/contato'}>
-                            <a>Enviar outra mensagem</a>
-                        </Link>
-                        </div>
                     </div>
                 </div>
             </div>
