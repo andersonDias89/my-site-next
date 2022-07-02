@@ -14,6 +14,10 @@ export function FormContact({ }) {
         e.preventDefault();
         console.log(name, email, mensage);  
 
+        setName('');
+        setEmail('');
+        setMensage('');
+
         fetch('/api/email', {
             method: 'POST',
             headers: {
