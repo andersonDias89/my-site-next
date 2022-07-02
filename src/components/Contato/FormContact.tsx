@@ -8,7 +8,7 @@ export function FormContact({ }) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [mensage, setMensage] = useState('');
-    const [sucess, setSucess] = useState(true);
+    const [sucess, setSucess] = useState(false);
 
     function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
