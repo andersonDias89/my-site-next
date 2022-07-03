@@ -4,7 +4,7 @@ const nodeMailer = require('nodemailer');
 export interface Email {
     name: string;
     email: string;
-    mensage: string;
+    message: string;
 }
 
 export default function handler(
@@ -28,13 +28,13 @@ export default function handler(
     to: process.env.EMAIL_USER,
     replyTo: req.body.email,
     subject: 'Contato',
-    text: `Nome: ${req.body.name} \nEmail: ${req.body.email} \nMensagem: ${req.body.mensage}`,
-    html: `<p>Nome: ${req.body.name}</p><p>Email: ${req.body.email}</p><p>Mensagem: ${req.body.mensage}</p>`
+    text: `Nome: ${req.body.name} \nEmail: ${req.body.email} \nMensagem: ${req.body.message}`,
+    html: `<p>Nome: ${req.body.name}</p><p>Email: ${req.body.email}</p><p>Mensagem: ${req.body.message}</p>`
     }).then(() => {
         res.status(200).json({
             name: req.body.name,
             email: req.body.email,
-            mensage: req.body.mensage
+            message: req.body.message
         });
     }).catch(error => {
         console.log(error);
