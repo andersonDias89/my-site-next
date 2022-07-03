@@ -60,14 +60,15 @@ export default function Projetos({projects}) {
     )
 }
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
     const res = await api.get('/projetos');
     console.log(res.data);
     return {
         props: {
             projects: res.data,
-            revalidate: 1000
-        }
+        },
+        
+        revalidate: 60 * 60 * 24,
     }
     
 }
