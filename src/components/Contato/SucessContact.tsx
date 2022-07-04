@@ -7,10 +7,7 @@ export function SucessContact() {
 
     return (
         <div className="flex justify-start items-center w-full flex-col space-y-2  py-6 rounded-md">
-            <div className="w-full flex flex-col items-center justify-center space-y-1">
-                <div className='text-5xl text-blueLight'>
-                    <AiFillCheckCircle />
-                </div>
+            <div className="w-full  space-y-1">
                 <div className="w-2/3">
                     <h2 className="flex flex-col items-center justify-center">
                         <span className="text-xl -mb-2 block ">Mensagem recebida com</span>
