@@ -3,6 +3,7 @@ import { FormContact } from "../components/Contato/FormContact";
 import { useState } from "react";
 import { SucessContact } from "../components/Contato/SucessContact";
 import { TitleContact } from "../components/Contato/TitleContact";
+import { TitleSucess } from "../components/Contato/TitleSucess";
 
 
 export default function Contatos() {
@@ -43,7 +44,13 @@ export default function Contatos() {
 
         <div className="w-full h-[calc(100vh-64px)] flex items-center justify-center flex-wrap degrade">
           <div className="container flex justify-center items-center">
-            <TitleContact />
+            {sucess === false &&
+              <TitleContact />
+            }
+
+            {sucess === true &&
+              <TitleSucess />
+            }
 
             <div className="w-1/2 animation-transition-right">
               {sucess === false &&
