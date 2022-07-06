@@ -20,13 +20,13 @@ export function TitleHome() {
                         <button
                             type="button"
                             onClick={() => router.push('projetos')}
-                            className="degradeButton text-dark font-extrabold shadow-lg transition-colors mt-4 w-52 h-10 rounded-md">
+                            className="degradeButton hover:brightness-50 transition-all text-dark font-extrabold shadow-lg mt-4 w-52 h-10 rounded-md">
                             Projetos
                         </button>
                         <button
                             type="button"
                             onClick={() => router.push('contato')}
-                            className="bg-transparent font-extrabold hover:text-blueLight transition-colors flex-1  h-10 border-2 border-secondary text-secondary mt-4 py-2 px-8 rounded-md">
+                            className="bg-transparent hover:brightness-50 transition-all font-extrabold hover:text-blueLight flex-1  h-10 border-2 border-secondary text-secondary mt-4 py-2 px-8 rounded-md">
                             Contato
                         </button>
                     </div>

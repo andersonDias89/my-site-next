@@ -77,7 +77,7 @@ export function FormContact({
                 <div className="flex w-4/5 justify-start">
                     <button
                         type="submit"
-                        className="degradeButton text-dark font-extrabold shadow-lg transition-colors mt-3 py-2 px-12 rounded-md">
+                        className="degradeButton hover:brightness-50 transition-all text-dark font-extrabold shadow-lg  mt-3 py-2 px-12 rounded-md">
                         Enviar
                     </button>
                 </div>
