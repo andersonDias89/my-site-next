@@ -13,10 +13,20 @@ import Head from 'next/head';
 
 
 import { api } from '../server/axios';
+import { useEffect, useState } from 'react';
 
 
 
-export default function Projetos({projects}) { 
+ export default function Projetos() { 
+    const [projects, setProjects] = useState([]);
+
+useEffect(() => {
+    api.get('/projetos').then(res => {
+        setProjects(res.data);
+        console.log(projects)
+    })
+}, []);
+
     const settings: SwiperProps = {
         spaceBetween: 100,
         slidesPerView: 1,
@@ -58,17 +68,4 @@ export default function Projetos({projects}) {
             </div>
         </>
     )
-}
-
-export const getStaticProps = async () => {
-    const res = await api.get('/projetos');
-    console.log(res.data);
-    return {
-        props: {
-            projects: res.data,
-        },
-        
-        revalidate: 60 * 60 * 24,
-    }
-    
 }
