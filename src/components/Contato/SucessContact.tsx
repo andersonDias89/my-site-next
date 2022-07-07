@@ -23,7 +23,7 @@ export function SucessContact() {
                         <button
                             onClick={() => router.push('/')}
                             type="button"
-                            className="degradeButton text-dark font-extrabold shadow-lg transition-colors mt-3 py-2 px-12 rounded-md">
+                            className="degradeButton hover:brightness-50 transition-all text-dark font-extrabold shadow-lg mt-3 py-2 px-12 rounded-md">
                             Voltar para a home
                         </button>
                     </div>
