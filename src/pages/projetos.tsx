@@ -21,10 +21,10 @@ import { useEffect, useState } from 'react';
     const [projects, setProjects] = useState([]);
 
 useEffect(() => {
-    api.get('/projetos').then(res => {
-        setProjects(res.data);
-        console.log(projects)
-    })
+    fetch('https://andersondias.vercel.app/api/projetos')
+    .then(res => res.json())
+    .then(data => setProjects(data))
+    .catch(err => console.log(err))
 }, []);
 
     const settings: SwiperProps = {
