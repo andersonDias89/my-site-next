@@ -12,21 +12,7 @@ import Head from 'next/head';
 
 
 
-import { api } from '../server/axios';
-import { useEffect, useState } from 'react';
-
-
-
  export default function Projetos() { 
-    const [projects, setProjects] = useState([]);
-
-useEffect(() => {
-    api.get('/projetos').then(res => {
-        setProjects(res.data);
-        console.log(projects)
-    })
-}, []);
-
     const settings: SwiperProps = {
         spaceBetween: 100,
         slidesPerView: 1,
@@ -69,3 +55,32 @@ useEffect(() => {
         </>
     )
 }
+
+const projects = [
+    {
+        id: "1",
+        title: 'Desafio Naped',
+        description: 'Projeto realizado para resolver um desafio da comunidade codelândia do Iuri Silva. É um blog com conteúdo voltado para o público "nerd".',
+        image: "projeto-1",
+        visitPage: "https://naped-desafio-ten.vercel.app",
+        repository: "https://github.com/andersonDias89/naped"
+    },
+
+    {
+        id: "2",
+        title: 'Site Academia',
+        description: 'Projeto criado para portfólio.Trata-se de um site para academia divulgando os seus serviços',
+        image: "projeto-2",
+        visitPage: "https://academia-projeto.web.app/",
+        repository: "https://github.com/andersonDias89/academia-treino"
+    },
+
+    {
+        id: "3",
+        title: 'Projeto Rachi',
+        description: 'Desafio proposto por Iuri Silva para desenvolver um web site da empresa Rachi',
+        image: "projeto-3",
+        visitPage: "https://projeto-rachi.web.app/",
+        repository: "https://github.com/andersonDias89/rachi-desafio"
+    },
+]
