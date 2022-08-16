@@ -3,21 +3,9 @@
 @tailwind utilities;
 
 body {
-    @apply bg-primary text-white;
+    @apply bg-primary-bg text-white;
 }
 
 .container {
-    @apply xs:w-11/12 mx-auto;
-}
-
-.bgImageHome {
-    background-image: url(../../public/bgGalaxy.svg);
-}
-
-.primary {
-    @apply bg-secondary text-white rounded-md;
-}
-
-.secondary {
-    @apply bg-transparent text-secondary rounded-md border-4 border-secondary;
+    @apply w-[90%] max-w-[1400px] m-auto;
 }
