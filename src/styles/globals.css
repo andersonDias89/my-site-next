@@ -16,3 +16,19 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: botttom, left;
 }
+
+.buttonPrimary {
+    @apply bg-primary text-white font-bold rounded-md px-[28px] py-[10px] text-[20px] transition-colors;
+}
+
+.buttonPrimary:hover {
+    @apply bg-hover-button;
+}
+
+.buttonSecondary {
+    @apply transition-colors bg-transparent outline outline-4 outline-primary text-primary font-bold outline-offset-[-4px] rounded-md px-[28px] py-[10px] text-[20px];
+}
+
+.buttonSecondary:hover {
+    @apply outline-4 outline-transparent text-white bg-hover-button  outline-offset-[-4px];
+}

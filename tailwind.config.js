@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}"
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/common/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
@@ -12,7 +13,8 @@ module.exports = {
         "card-bg": "#28282E",
         "primary": "#8234BD",
         "secondary": "#4D9E8E",
-        "tertiary": "#4A255C"
+        "tertiary": "#4A255C",
+        "hover-button": "#752EAA"
       },
       screens: {
 
