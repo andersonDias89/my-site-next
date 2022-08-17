@@ -17,6 +17,9 @@ module.exports = {
       screens: {
 
 
+      },
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"]
       }
     },
   },
