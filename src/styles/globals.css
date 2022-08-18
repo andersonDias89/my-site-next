@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    @apply w-[90%] max-w-[1400px] m-auto;
+    @apply w-[90%] max-w-[1300px] m-auto;
 }
 
 .bg-home {
@@ -18,7 +18,7 @@ background-position: botttom, left;
 }
 
 .buttonPrimary {
-    @apply bg-primary text-white font-bold rounded-md px-[28px] py-[10px] text-[20px] transition-colors;
+    @apply bg-primary text-white;
 }
 
 .buttonPrimary:hover {
@@ -26,7 +26,7 @@ background-position: botttom, left;
 }
 
 .buttonSecondary {
-    @apply transition-colors bg-transparent outline outline-4 outline-primary text-primary font-bold outline-offset-[-4px] rounded-md px-[28px] py-[10px] text-[20px];
+    @apply transition-colors bg-transparent outline outline-4 outline-primary text-primary outline-offset-[-4px];
 }
 
 .buttonSecondary:hover {

@@ -1,5 +1,5 @@
 export function IlustrationHome() {
     return (
-        <img className="w-[460px]" src="./IlustrationHome.png" />
+        <img className="w-[400px]" src="./IlustrationHome.png" />
     )
 }

@@ -3,9 +3,9 @@ import { Browsers, ChatCircleDots } from 'phosphor-react'
 
 export function TitleHome() {
     return (
-        <div className="flex flex-col">
-            <h1 className="font-black text-[52px]">Anderson Dias</h1>
-            <span className="tracking-widest -mt-3 text-[16px]">Desenvolvedor front-end | UX/UI Design</span>
+        <div className="flex flex-col items-center">
+            <h1 className="font-extrabold text-[52px]">Anderson Dias</h1>
+            <span className="tracking-widest -mt-3 text-[18px] font-light">Desenvolvedor front-end | UX/UI Design</span>
             <div className="flex gap-4 mt-4">
                 <Button
                     type="button"

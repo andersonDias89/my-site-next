@@ -11,7 +11,7 @@ type ButtonProps = {
 export function Button({ title, style, onCLick, icon }: ButtonProps) {
     return (
         <button
-            className={`${style} flex items-center gap-2`}
+            className={`${style} flex items-center gap-2 font-bold rounded-md px-[36px] py-[10px] text-[20px] transition-colors`}
             onClick={() => { }}>
             <span>{icon}</span>
             <span>{title}</span>
