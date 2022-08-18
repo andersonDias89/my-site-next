@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    @apply w-[90%] max-w-[1300px] m-auto;
+    @apply w-[90%] max-w-[1200px] m-auto;
 }
 
 .bg-home {
